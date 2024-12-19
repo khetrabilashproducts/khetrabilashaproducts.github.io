@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Khetra Bilasha Products</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+           body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .navbar{
+            margin-bottom: 100%;
+        }
+
+        .containerr {
+           margin-left: 10%;
+            width: 80%;
+            margin-top: 100px; /* Adjust this value to create space below the navbar */
+          
+            
+        }
+
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1, h2, h3, h4 {
+            color: #222;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Our Story Section */
+        .story {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out;
+        }
+
+        .story p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Owner Name & Image Section */
+        .owner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .owner img {
+            border-radius: 50%;
+            margin-right: 30px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #0066cc;
+        }
+
+        .owner .content {
+            text-align: left;
+        }
+
+        .owner h3 {
+            font-size: 24px;
+            color: #0066cc;
+        }
+
+        .owner p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Staff Appreciation Section */
+        .staff {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideUp 2s ease-out;
+        }
+
+        .staff p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .thank-you {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+
+        /* Staff Images Section */
+        .staff-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .staff-images .staff-member {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .staff-images .staff-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 5px solid #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .staff-images .staff-member h4 {
+            font-size: 20px;
+            color: #0066cc;
+        }
+
+        .staff-images .staff-member p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .staff-images .staff-member:hover {
+            transform: scale(1.05);
+        }
+
+.product-carousel .carousel-item img {
+    max-width: 1000px;
+    max-height: 800px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1200px) {
+            .staff-images {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #container{
+            max-width: 100%;
+            min-height: 200px;
+        }
+            .staff-images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .owner {
+                flex-direction: column;
+            }
+
+            .owner img {
+                margin-bottom: 20px;
+            }
+
+    
+        }
+
+        @media screen and (max-width: 480px) {
+            #container{
+            max-width: 100%;
+            min-height: 200px;
+        }
+            h1, h2, h3 {
+                font-size: 24px;
+            }
+
+            .story p, .owner p, .staff p {
+                font-size: 16px;
+            }
+
+    
+
+            .staff-images .staff-member h4 {
+                font-size: 18px;
+            }
+
+            .staff-images .staff-member p {
+                font-size: 14px;
+            }
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">KBP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="containerr">
+        <!-- Our Story Section -->
+        <div class="section story">
+            <h1>Our Story</h1>
+            <p>
+                At Khetra Bilasha Cement Products, we pride ourselves on producing high-quality cement products that meet our clients' exacting standards. Our commitment to quality has made us a trusted name in the industry. We are honored to contribute to the building of stronger and more resilient Products across the region.
+            </p>
+            <p>ଖେତ୍ର ବିଳାଶ ସିମେଣ୍ଟ ପ୍ରଡକ୍ଟସ, ଆମେ ଉଚ୍ଚମାନର ସିମେଣ୍ଟ ଉତ୍ପାଦ ଉତ୍ପାଦନ କରି ଗର୍ବିତ , ଯାହା ଆମର ଗ୍ରାହକଙ୍କ ସଠିକ୍ ମାନଦଣ୍ଡ ପୂରଣ କରେ | ଗୁଣବତ୍ତା ପ୍ରତି ଆମର ପ୍ରତିବଦ୍ଧତା ଆମକୁ ଶିଳ୍ପରେ ଏକ ବିଶ୍ୱସ୍ତ ନାମ କରିପାରିଛି |</p>
+        </div>
+
+        <!-- Owner Name & Image Section -->
+        <div class="section owner">
+            <img src="/images/owner.png" alt="Sukanta Behera">
+            <div class="content">
+                <h3>Founder: Sukanta Behera</h3>
+                <p>The company was founded by Sukanta Behera, whose vision drives the business. His dedication to quality and innovation has earned us the trust of numerous clients.</p>
+            </div>
+        </div>
+
+        <!-- Staff Appreciation Section -->
+        <div class="section staff">
+            <h2>Our Dedicated Team</h2>
+            <p>
+                We would like to extend our heartfelt gratitude to our dedicated team who work tirelessly day and night to make this vision a reality. Their hard work and passion are the foundation of our success. <span class="thank-you">Thank you all for your incredible contributions!</span>
+            </p>
+        </div>
+
+        <!-- Staff Images Section -->
+        <div class="section staff-images">
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/120?text=Staff+1" alt="Staff 1">
+                <h4>Deepak Behera</h4>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/120?text=Staff+2" alt="Staff 2">
+                <h4>HariHara Swain</h4>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/120?text=Staff+3" alt="Staff 3">
+                <h4>Milu Behera</h4>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/120?text=Staff+4" alt="Staff 4">
+                <h4>Bisu Patra</h4>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/120?text=Staff+5" alt="Staff 5">
+                <h4>Ranjan Swain</h4>
+            </div>
+        </div>
+
+        <!-- Sliding Image Gallery -->
+        
+    </div>
+
+
+
+    <div class="containerr py-5">
+        <h2 class="text-center mb-4">Memosries</h2>
+    
+        <div id="product-carousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/bg/m1.jpg" class="d-block w-100" alt="Cement Chair">
+            
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="/images/bg/m2.jpg" class="d-block w-100" alt="Cement Planter">
+                 
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m3.jpg" class="d-block w-100" alt="PVC Bathroom Door">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m4.jpg" class="d-block w-100" alt="PVC Bathroom Door">
+                  
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m6.jpg" class="d-block w-100" alt="Cement Planter">
+                  
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m5.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m11.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m7.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m8.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m9.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bg/m10.jpg" class="d-block w-100" alt="Cement Planter">
+                    
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <div class="footer">
+        <p>&copy; <span id="year"></span> Khetra Bilasha Products | All Rights Reserved</p>
+    </div>
+
+    <!-- JavaScript -->
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67618178af5bfec1dbdd769c/1ifae3g3r';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+     <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // Initialize the Photo Sphere Viewer
+        let scene, camera, renderer, sphere, controls;
+            let carousel = document.querySelector('#product-carousel');
+            let carouselInstance = new bootstrap.Carousel(carousel);
+
+            let inactivityTimeout;
+
+            function stopCarousel() {
+                carouselInstance.pause();
+            }
+
+            function startCarousel() {
+                carouselInstance.cycle();
+            }
+
+
+
+        </script>
+
+    </body>
+    </html>
