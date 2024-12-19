@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+ 
+}
+.navbar {
+    background-color: #343a40;
+    transition: top 0.3s ease-in-out;
+    z-index: 10; /* Higher than the hero section */
+}
+.navbar a {
+    color: white;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #343a40;
+    color: white;
+}
+.products img {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+/* Product list container */
+.products {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    /* justify-content: center; */
+  }
+  .product-heading {
+    text-align: center;
+    background-color: #f0f4fa; /* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    max-width: 350px;
+    margin: 0 auto; /* Center-align the heading */
+}
+
+.product-heading h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-size, .product-price {
+    font-size: 1.3rem;
+    color: #555;
+    margin: px 0;
+}
+
+.product-cardd {
+   
+  flex: 1 1 10%;
+  background-color: #e1e7f1;
+  color: #333;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  /* Product card styles */
+  .product-card {
+    /* background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: calc(50% - 0.75rem); Adjust width for 2 cards per row */
+
+    flex: 1 1 20%;
+    background-color: #e1e7f1;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  
+  .product-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  
+  .product-card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 1rem;
+  }
+
+.space{
+
+    padding-top: 50px;
+
+  }
+  
+
+
+   /* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+.navbar {
+  text-align: center;
+    /* margin-bottom: 100%; */
+    flex-direction: column;
+    padding: 0.5rem;
+    transition: top 0.3s ease-in-out;
+}
+
+.navbar a {
+    padding: 0.5rem;
+}
+
+.products {
+    width: 95%;
+}
+
+.product-card {
+    width: calc(50% - 0.75rem); /* Two cards per row on small screens */
+}
+
+.product-card h2 {
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.product-cardd {
+   
+  flex: 1 1 25%;
+  background-color: #e1e7f1;
+  color: #333;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-cardd img{
+  size: 90%;
+
+}
+.product-card {
+    /* background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: calc(50% - 0.75rem); Adjust width for 2 cards per row */
+
+    flex: 1 1 30%;
+    background-color: #e1e7f1;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+/* Contact section styling */
+.contact {
+padding: 2rem;
+text-align: center;
+}
+
+}
+  
